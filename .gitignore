@@ -1,0 +1,47 @@
+# Archivos compilados
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Archivos de configuración de IDE
+.classpath
+.factorypath
+.project
+.settings/
+.vscode/
+.idea/
+*.iml
+*.iws
+
+# Archivos de Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+*~
+
+# Configuraciones sensibles (NO SUBIR)
+application-local.properties
+application-prod.properties
+
+# Directorios de SpecStory
+.specstory/
+
+# Archivos de backup
+*.bak
+*.orig
+
+# Node modules (si se agrega frontend)
+node_modules/
+dist/
+build/
