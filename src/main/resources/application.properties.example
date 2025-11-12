@@ -1,0 +1,36 @@
+spring.application.name=Umascota
+
+# ===========================================
+# Configuración de Base de Datos
+# ===========================================
+# URL de conexión (cambiar según tu entorno)
+spring.datasource.url=jdbc:mysql://localhost:3306/umascotas
+
+# Usuario y contraseña (usar variables de entorno en producción)
+# Configurar las siguientes variables de entorno:
+# DB_USER=tu_usuario
+# DB_PASS=tu_contraseña
+spring.datasource.username=${DB_USER:root}
+spring.datasource.password=${DB_PASS:tu_contraseña_aqui}
+
+# Driver de MySQL
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# ===========================================
+# Configuración de JPA / Hibernate
+# ===========================================
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+
+# ===========================================
+# Configuración de Logging
+# ===========================================
+logging.level.org.springframework.web=DEBUG
+logging.level.org.springframework.security=DEBUG
+
+# ===========================================
+# Configuración de Thymeleaf
+# ===========================================
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.enabled=true
